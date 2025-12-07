@@ -9,7 +9,7 @@ namespace ContactBook
     {
         string directoryPath = @"C:\Users\xylea\source\repos\Contacts";
         Input input = new Input();
-        public static List<ClassContact> contacts = new List<ClassContact>();
+        public readonly List<ClassContact> contacts = new List<ClassContact>();
         public void AddContact()
         {
             string Name = input.ReadString("Enter Contact Name", intChecker : true);
